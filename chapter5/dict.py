@@ -5,9 +5,13 @@ alice_0 = {"color": "green", "points": 5}
 # print(alice_0["points"])
 
 new_point = alice_0["points"]
-print("you just earned " + str(new_point) + " points.")
+#print("you just earned " + str(new_point) + " points.")
 
 # 添加键值对
 alice_0["x_position"] = 0
 alice_0["y_position"] = 25
-print(alice_0)
+#print(alice_0)
+
+# 遍历字典
+for key in alice_0:
+    print("the value of " + key + " is " + str(alice_0[key]))
